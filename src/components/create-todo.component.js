@@ -51,11 +51,12 @@ export default class CreateTodo extends Component {
       todo_completed: false
     });
   }
+
   render() {
     return (
       <div style={{ marginTop: 20 }}>
         <h3>Create a New Queaser</h3>
-        <form onSubmit={this.onsubmit}>
+        <form onSubmit={this.onSubmit}>
           <div className="form-group">
             <label>Description:</label>
             <input
@@ -108,6 +109,9 @@ export default class CreateTodo extends Component {
                       />
               <label className="form-check-label">High</label>
             </div>
+          </div>
+          <div className="form-group">
+            <input type="submit" value="Create Todo" className="btn btn-primary" />
           </div>
         </form>
       </div>
